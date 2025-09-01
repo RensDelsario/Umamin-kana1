@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession Folder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="folder-container" id="folderContainer">
+        <div class="glow"></div>
+        <div class="folder" id="folder">
+            <div class="folder-label"></div>
+            <div class="letter" id="letter">
+                <div class="letter-content" id="letterContent">
+                    Aminin muna kasi na crush o gusto mo sya bahala ka ikaw din.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sparkle effects -->
+        <div class="sparkle" style="--tx: -30px; --ty: -20px; animation-delay: 0.5s;"></div>
+        <div class="sparkle" style="--tx: 30px; --ty: -40px; animation-delay: 1.2s;"></div>
+        <div class="sparkle" style="--tx: -40px; --ty: 30px; animation-delay: 2s;"></div>
+        <div class="sparkle" style="--tx: 40px; --ty: 20px; animation-delay: 2.8s;"></div>
+    </div>
+    
+    <div class="instructions">
+        Click the folder to reveal the secret message<br>
+        Click again to make it bigger wait 2 to 3 second
+    </div>
+    
+    <div class="secret-reveal" id="secretReveal">
+        <div class="secret-message">
+            <h2 class="text-2xl font-bold text-rose-600 mb-4">💌 Secret Confession</h2>
+            <p class="text-gray-700 mb-4">Sometimes the heart speaks louder than words...</p>
+            <p class="text-rose-500 font-semibold italic">"umamin kana boss habang di pa huli"</p>
+            <button onclick="closeSecret()" class="mt-6 bg-rose-600 text-white px-6 py-2 rounded-full hover:bg-rose-700 transition-colors">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
+
